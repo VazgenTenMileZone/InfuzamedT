@@ -22,27 +22,19 @@ class BloodPressureViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      //  showLoader()
+        showLoader()
   
-//        startScanning { [weak self] in
-//            guard let self else { return }
-//            AHDevicePlugin.default()?.checkingBluetoothStatus(self)
-//            self.connectDevice()
-//        }
+        startScanning { [weak self] in
+            guard let self else { return }
+            AHDevicePlugin.default()?.checkingBluetoothStatus(self)
+            self.connectDevice()
+        }
     }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupViews()
     
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let systolicColors = [UIColor(hex: "456F01"), UIColor(hex: "637402"), UIColor(hex: "DB8804"), UIColor(hex: "D62B04"), UIColor(hex: "BA0806")]
-        systolicPipesView.configView(currentV: 130, minV: 80, maxV: 170, colors: systolicColors)
-        diastolicPipesView.configView(currentV: 70, minV: 0, maxV: 140, colors: systolicColors)
-        pulsePipesView.configView(currentV: 90, minV: 0, maxV: 200, colors: [UIColor(hex: "A80C00"), UIColor(hex: "A80C00")])
     }
 }
 

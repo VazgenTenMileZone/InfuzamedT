@@ -22,17 +22,27 @@ class BloodPressureViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showLoader()
-        startScanning { [weak self] in
-            guard let self else { return }
-            AHDevicePlugin.default()?.checkingBluetoothStatus(self)
-            self.connectDevice()
-        }
+      //  showLoader()
+  
+//        startScanning { [weak self] in
+//            guard let self else { return }
+//            AHDevicePlugin.default()?.checkingBluetoothStatus(self)
+//            self.connectDevice()
+//        }
     }
 
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupViews()
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let systolicColors = [UIColor(hex: "456F01"), UIColor(hex: "637402"), UIColor(hex: "DB8804"), UIColor(hex: "D62B04"), UIColor(hex: "BA0806")]
+        systolicPipesView.configView(currentV: 130, minV: 80, maxV: 170, colors: systolicColors)
+        diastolicPipesView.configView(currentV: 70, minV: 0, maxV: 140, colors: systolicColors)
+        pulsePipesView.configView(currentV: 90, minV: 0, maxV: 200, colors: [UIColor(hex: "A80C00"), UIColor(hex: "A80C00")])
     }
 }
 
@@ -87,8 +97,8 @@ private extension BloodPressureViewController {
         ]
         pulseValue.text = String(format: "%d bpm", data.pulse)
         let systolicColors = [UIColor(hex: "456F01"), UIColor(hex: "637402"), UIColor(hex: "DB8804"), UIColor(hex: "D62B04"), UIColor(hex: "BA0806")]
-        systolicPipesView.configView(currentV: Int(data.systolic), minV: 70, maxV: 170, colors: systolicColors)
-        diastolicPipesView.configView(currentV: Int(data.diastolic), minV: 10, maxV: 100, colors: systolicColors)
+        systolicPipesView.configView(currentV: Int(data.systolic), minV: 80, maxV: 170, colors: systolicColors)
+        diastolicPipesView.configView(currentV: Int(data.diastolic), minV: 0, maxV: 140, colors: systolicColors)
         pulsePipesView.configView(currentV: Int(data.pulse), minV: 0, maxV: 200, colors: [UIColor(hex: "A80C00"), UIColor(hex: "A80C00")])
     }
 

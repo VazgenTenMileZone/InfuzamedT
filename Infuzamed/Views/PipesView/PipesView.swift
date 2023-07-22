@@ -57,59 +57,47 @@ private extension PipesView {
     
     func calculateGradient() {
         layoutIfNeeded()
+        
         gradientLayer = CAGradientLayer()
         gradientLayer.frame = frontView.bounds
-        if let first = colors.first {
-            gradientLayer.colors = [first.cgColor]
+        
+        if let firstColor = colors.first {
+            gradientLayer.colors = [firstColor.cgColor]
         }
+        
         gradientLayer.startPoint = CGPoint(x: 1, y: 0)
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         
-        let percent = currentValue * 100 / maxValue
+        let percent = (currentValue - minValue) * 100 / (maxValue - minValue)
+        let roundedValue = Double(percent / 25).rounded(.down)
         
-        switch percent {
-        case 0...25:
-            if colors.count > 1 {
-                gradientLayer.colors?.insert(colors[1].cgColor, at: 0)
-            }
-        case 26...50:
-            if colors.count > 1 {
-                gradientLayer.colors?.insert(colors[1].cgColor, at: 0)
-            }
-            if colors.count > 2 {
-                gradientLayer.colors?.insert(colors[2].cgColor, at: 0)
-            }
-        case 51...75:
-            if colors.count > 1 {
-                gradientLayer.colors?.insert(colors[1].cgColor, at: 0)
-            }
-            if colors.count > 2 {
-                gradientLayer.colors?.insert(colors[2].cgColor, at: 0)
-            }
-            if colors.count > 3 {
-                gradientLayer.colors?.insert(colors[3].cgColor, at: 0)
-            }
-        default:
-            if colors.count > 1 {
-                gradientLayer.colors?.insert(colors[1].cgColor, at: 0)
-            }
-            if colors.count > 2 {
-                gradientLayer.colors?.insert(colors[2].cgColor, at: 0)
-            }
-            if colors.count > 3 {
-                gradientLayer.colors?.insert(colors[3].cgColor, at: 0)
-            }
-            if colors.count > 4 {
-                gradientLayer.colors?.insert(colors[4].cgColor, at: 0)
-            }
-            
+        for i in 1...min(colors.count - 1, Int(roundedValue)) {
+            gradientLayer.colors?.insert(colors[i].cgColor, at: 0)
         }
-
-        if let last = colors.last {
-            frontTopView.backgroundColor = last.darken(by: 0.1)
+        
+        if let lastCgColor = gradientLayer.colors?.first {
+            frontTopView.backgroundColor = UIColor(cgColor: lastCgColor as! CGColor).darken(by: 0.1)
         }
+        
         frontView.layer.addSublayer(gradientLayer)
         updateLocalConstraints()
+    }
+    
+    func setStakLabelColor(value: Int) -> UIColor {
+        let percent = (value - minValue) * 100 / (maxValue - minValue)
+        let colorCount = colors.count
+
+        if colorCount == 0 {
+            return .red
+        } else if colorCount == 1 {
+            return colors[0]
+        }
+
+        // Calculate the index of the color based on the percentage value
+        let roundedValue = Double(percent / 25).rounded(.down)
+        let index = min(colorCount - 1, Int(roundedValue))
+
+        return colors[index]
     }
     
     func calculateLeftStackViews() {
@@ -132,7 +120,7 @@ private extension PipesView {
         let label = UILabel()
         label.text = String(value)
         label.textAlignment = .center
-        label.textColor = .red
+        label.textColor = setStakLabelColor(value: value)
         label.font = UIFont.systemFont(ofSize: 14)
          
         // Create an indicator UIView

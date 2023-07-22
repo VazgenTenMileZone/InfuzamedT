@@ -9,21 +9,71 @@
 /* Begin PBXBuildFile section */
 		3116A40A2A60669400717911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4092A60669400717911 /* AppDelegate.swift */; };
 		3116A40C2A60669400717911 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A40B2A60669400717911 /* SceneDelegate.swift */; };
-		3116A40E2A60669400717911 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A40D2A60669400717911 /* ViewController.swift */; };
-		3116A4112A60669400717911 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116A40F2A60669400717911 /* Main.storyboard */; };
 		3116A4132A60669600717911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3116A4122A60669600717911 /* Assets.xcassets */; };
 		3116A4162A60669600717911 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116A4142A60669600717911 /* LaunchScreen.storyboard */; };
+		3116A4232A606AD800717911 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4222A606AD800717911 /* UIColor+Extension.swift */; };
+		3116A4262A606AFD00717911 /* FlexibleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4252A606AFC00717911 /* FlexibleView.swift */; };
+		3116A4282A606B0B00717911 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4272A606B0B00717911 /* GradientView.swift */; };
+		3116A42E2A606B4F00717911 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A42C2A606B4F00717911 /* LoginViewController.swift */; };
+		3116A42F2A606B4F00717911 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3116A42D2A606B4F00717911 /* LoginViewController.xib */; };
+		3116A4332A606EA700717911 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4312A606EA700717911 /* MenuViewController.swift */; };
+		3116A4342A606EA700717911 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3116A4322A606EA700717911 /* MenuViewController.xib */; };
+		3116A4382A606FB600717911 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3116A4362A606FB500717911 /* MenuCollectionViewCell.swift */; };
+		3116A4392A606FB600717911 /* MenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3116A4372A606FB500717911 /* MenuCollectionViewCell.xib */; };
+		312623502A6698ED00A7BB98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126234F2A6698ED00A7BB98 /* BaseViewController.swift */; };
+		312DB4C92A65C81000455129 /* BloodPressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DB4C72A65C81000455129 /* BloodPressureViewController.swift */; };
+		312DB4CA2A65C81000455129 /* BloodPressureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312DB4C82A65C81000455129 /* BloodPressureViewController.xib */; };
+		31516B9B2A607D9000FCD4A8 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31516B9A2A607D9000FCD4A8 /* LoginManager.swift */; };
+		31567B8F2A67B63300639907 /* LinkedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31567B8E2A67B63300639907 /* LinkedLabel.swift */; };
+		316C5C012A66D8FC00BA2E7C /* AHDevicePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; };
+		316C5C022A66D8FC00BA2E7C /* AHDevicePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		319CA4722A6569AF0065681E /* PipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319CA4712A6569AF0065681E /* PipesView.swift */; };
+		319CA4742A6569B80065681E /* PipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CA4732A6569B80065681E /* PipesView.xib */; };
+		319CA4762A656FBC0065681E /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319CA4752A656FBC0065681E /* UIVIew+Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3144436C2A66C82D00A9429A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				316C5C022A66D8FC00BA2E7C /* AHDevicePlugin.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		105FEDBAABD521E97C4AAC05 /* Pods-Infuzamed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infuzamed.release.xcconfig"; path = "Target Support Files/Pods-Infuzamed/Pods-Infuzamed.release.xcconfig"; sourceTree = "<group>"; };
 		3116A4062A60669400717911 /* Infuzamed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infuzamed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3116A4092A60669400717911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3116A40B2A60669400717911 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3116A40D2A60669400717911 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3116A4102A60669400717911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3116A4122A60669600717911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3116A4152A60669600717911 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3116A4172A60669600717911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3116A4222A606AD800717911 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		3116A4252A606AFC00717911 /* FlexibleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleView.swift; sourceTree = "<group>"; };
+		3116A4272A606B0B00717911 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		3116A42C2A606B4F00717911 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3116A42D2A606B4F00717911 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		3116A4312A606EA700717911 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3116A4322A606EA700717911 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		3116A4362A606FB500717911 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		3116A4372A606FB500717911 /* MenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		3126234F2A6698ED00A7BB98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		312DB4C72A65C81000455129 /* BloodPressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureViewController.swift; sourceTree = "<group>"; };
+		312DB4C82A65C81000455129 /* BloodPressureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		31516B9A2A607D9000FCD4A8 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		31567B8E2A67B63300639907 /* LinkedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedLabel.swift; sourceTree = "<group>"; };
+		316C5BFD2A66D78D00BA2E7C /* Infuzamed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Infuzamed-Bridging-Header.h"; sourceTree = "<group>"; };
+		316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AHDevicePlugin.framework; sourceTree = "<group>"; };
+		319CA4712A6569AF0065681E /* PipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipesView.swift; sourceTree = "<group>"; };
+		319CA4732A6569B80065681E /* PipesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PipesView.xib; sourceTree = "<group>"; };
+		319CA4752A656FBC0065681E /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		BA34DA37555D80BC57CFDBBB /* Pods-Infuzamed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infuzamed.debug.xcconfig"; path = "Target Support Files/Pods-Infuzamed/Pods-Infuzamed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +81,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				316C5C012A66D8FC00BA2E7C /* AHDevicePlugin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E9E158284F94F30911A81B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3116A3FD2A60669400717911 = {
 			isa = PBXGroup;
 			children = (
 				3116A4082A60669400717911 /* Infuzamed */,
 				3116A4072A60669400717911 /* Products */,
+				5739422873B25EC430C4E7DD /* Pods */,
+				0E9E158284F94F30911A81B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +117,128 @@
 		3116A4082A60669400717911 /* Infuzamed */ = {
 			isa = PBXGroup;
 			children = (
-				3116A4092A60669400717911 /* AppDelegate.swift */,
-				3116A40B2A60669400717911 /* SceneDelegate.swift */,
-				3116A40D2A60669400717911 /* ViewController.swift */,
-				3116A40F2A60669400717911 /* Main.storyboard */,
+				31516B992A607D8700FCD4A8 /* Managers */,
+				3116A42A2A606B2A00717911 /* Controllers */,
+				3116A4292A606B1600717911 /* Base */,
+				3116A4242A606AE700717911 /* Views */,
+				3116A4212A606ABC00717911 /* Extensions */,
+				316C5BFC2A66D6DE00BA2E7C /* Supporting Files */,
 				3116A4122A60669600717911 /* Assets.xcassets */,
 				3116A4142A60669600717911 /* LaunchScreen.storyboard */,
-				3116A4172A60669600717911 /* Info.plist */,
 			);
 			path = Infuzamed;
+			sourceTree = "<group>";
+		};
+		3116A4212A606ABC00717911 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3116A4222A606AD800717911 /* UIColor+Extension.swift */,
+				319CA4752A656FBC0065681E /* UIVIew+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3116A4242A606AE700717911 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				319CA4702A6569A60065681E /* PipesView */,
+				3116A4252A606AFC00717911 /* FlexibleView.swift */,
+				3116A4272A606B0B00717911 /* GradientView.swift */,
+				31567B8E2A67B63300639907 /* LinkedLabel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3116A4292A606B1600717911 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3116A4092A60669400717911 /* AppDelegate.swift */,
+				3116A40B2A60669400717911 /* SceneDelegate.swift */,
+				3126234F2A6698ED00A7BB98 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3116A42A2A606B2A00717911 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3116A42B2A606B3C00717911 /* Login */,
+				3116A4302A606E9700717911 /* Menu */,
+				312DB4C62A65C7D400455129 /* BloodPressure */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3116A42B2A606B3C00717911 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3116A42C2A606B4F00717911 /* LoginViewController.swift */,
+				3116A42D2A606B4F00717911 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3116A4302A606E9700717911 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				3116A4312A606EA700717911 /* MenuViewController.swift */,
+				3116A4322A606EA700717911 /* MenuViewController.xib */,
+				3116A4352A606F8E00717911 /* MenuCollectionViewCell */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		3116A4352A606F8E00717911 /* MenuCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3116A4362A606FB500717911 /* MenuCollectionViewCell.swift */,
+				3116A4372A606FB500717911 /* MenuCollectionViewCell.xib */,
+			);
+			path = MenuCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		312DB4C62A65C7D400455129 /* BloodPressure */ = {
+			isa = PBXGroup;
+			children = (
+				312DB4C72A65C81000455129 /* BloodPressureViewController.swift */,
+				312DB4C82A65C81000455129 /* BloodPressureViewController.xib */,
+			);
+			path = BloodPressure;
+			sourceTree = "<group>";
+		};
+		31516B992A607D8700FCD4A8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				31516B9A2A607D9000FCD4A8 /* LoginManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		316C5BFC2A66D6DE00BA2E7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3116A4172A60669600717911 /* Info.plist */,
+				316C5BFD2A66D78D00BA2E7C /* Infuzamed-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		319CA4702A6569A60065681E /* PipesView */ = {
+			isa = PBXGroup;
+			children = (
+				319CA4712A6569AF0065681E /* PipesView.swift */,
+				319CA4732A6569B80065681E /* PipesView.xib */,
+			);
+			path = PipesView;
+			sourceTree = "<group>";
+		};
+		5739422873B25EC430C4E7DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA34DA37555D80BC57CFDBBB /* Pods-Infuzamed.debug.xcconfig */,
+				105FEDBAABD521E97C4AAC05 /* Pods-Infuzamed.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +248,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3116A41A2A60669600717911 /* Build configuration list for PBXNativeTarget "Infuzamed" */;
 			buildPhases = (
+				1A337174D9539FC2B9262045 /* [CP] Check Pods Manifest.lock */,
 				3116A4022A60669400717911 /* Sources */,
 				3116A4032A60669400717911 /* Frameworks */,
 				3116A4042A60669400717911 /* Resources */,
+				3144436C2A66C82D00A9429A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +303,66 @@
 			files = (
 				3116A4162A60669600717911 /* LaunchScreen.storyboard in Resources */,
 				3116A4132A60669600717911 /* Assets.xcassets in Resources */,
-				3116A4112A60669400717911 /* Main.storyboard in Resources */,
+				319CA4742A6569B80065681E /* PipesView.xib in Resources */,
+				3116A4392A606FB600717911 /* MenuCollectionViewCell.xib in Resources */,
+				312DB4CA2A65C81000455129 /* BloodPressureViewController.xib in Resources */,
+				3116A42F2A606B4F00717911 /* LoginViewController.xib in Resources */,
+				3116A4342A606EA700717911 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A337174D9539FC2B9262045 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infuzamed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3116A4022A60669400717911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3116A40E2A60669400717911 /* ViewController.swift in Sources */,
+				312623502A6698ED00A7BB98 /* BaseViewController.swift in Sources */,
+				3116A42E2A606B4F00717911 /* LoginViewController.swift in Sources */,
+				3116A4262A606AFD00717911 /* FlexibleView.swift in Sources */,
+				3116A4282A606B0B00717911 /* GradientView.swift in Sources */,
+				3116A4382A606FB600717911 /* MenuCollectionViewCell.swift in Sources */,
+				312DB4C92A65C81000455129 /* BloodPressureViewController.swift in Sources */,
+				3116A4332A606EA700717911 /* MenuViewController.swift in Sources */,
+				31516B9B2A607D9000FCD4A8 /* LoginManager.swift in Sources */,
+				319CA4762A656FBC0065681E /* UIVIew+Extension.swift in Sources */,
 				3116A40A2A60669400717911 /* AppDelegate.swift in Sources */,
 				3116A40C2A60669400717911 /* SceneDelegate.swift in Sources */,
+				319CA4722A6569AF0065681E /* PipesView.swift in Sources */,
+				31567B8F2A67B63300639907 /* LinkedLabel.swift in Sources */,
+				3116A4232A606AD800717911 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3116A40F2A60669400717911 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3116A4102A60669400717911 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3116A4142A60669600717911 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,57 +490,89 @@
 		};
 		3116A41B2A60669600717911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA34DA37555D80BC57CFDBBB /* Pods-Infuzamed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK_DR_CLINICAL",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Infuzamed/Info.plist;
+				INFOPLIST_FILE = "Infuzamed/Supporting Files/info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenmilezone.Infuzamed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Infuzamed/Supporting Files/Infuzamed-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3116A41C2A60669600717911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105FEDBAABD521E97C4AAC05 /* Pods-Infuzamed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK_DR_CLINICAL",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Infuzamed/Info.plist;
+				INFOPLIST_FILE = "Infuzamed/Supporting Files/info.plist";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tenmilezone.Infuzamed;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Infuzamed/Supporting Files/Infuzamed-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

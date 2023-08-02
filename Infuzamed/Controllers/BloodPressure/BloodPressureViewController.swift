@@ -23,7 +23,7 @@ class BloodPressureViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         showLoader()
-  
+
         startScanning { [weak self] in
             guard let self else { return }
             AHDevicePlugin.default()?.checkingBluetoothStatus(self)
@@ -34,7 +34,12 @@ class BloodPressureViewController: BaseViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         setupViews()
+    }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        AHDevicePlugin.default().stopSearch()
+        AHDevicePlugin.default().stopAutoConnect()
     }
 }
 
@@ -56,6 +61,7 @@ private extension BloodPressureViewController {
 
     func startScanning(succes: @escaping () -> Void) {
         let filter = BTScanFilter()
+        filter.scanTypes = [BTDeviceType.bloodPressureMeter.rawValue]
         AHDevicePlugin.default().searchDevice(filter) { device in
             if let device {
                 self.currentDevice = device
@@ -131,6 +137,7 @@ extension BloodPressureViewController: AHDeviceDataDelegate {
             DispatchQueue.main.async {
                 self.showPressureData(data: data)
             }
+            sendDataToServer(data: data)
         case _ as AHBpmErrorData:
             hideLoder()
             DispatchQueue.main.async {
@@ -141,4 +148,17 @@ extension BloodPressureViewController: AHDeviceDataDelegate {
             break
         }
     }
+
+    func sendDataToServer(data: AHBpmData) {
+        guard let json = LoginManager.shared.retrieveTokenFromKeychain()?.jsonWithJWT() else { return }
+        let uid = json["uid"] as? String ?? ""
+        let params: [String: Any] = [
+                                     "bloodPressure": String(format: "%d/%d", data.systolic, data.diastolic),
+                                     "heartRate": String(format: "%d", data.pulse),
+                                     "measurementTime": Date().dateToISO8601String(),
+                                     "uid": uid]
+
+        NetworkManager.post(urlString: "http://ec2-54-215-231-89.us-west-1.compute.amazonaws.com:8085/api/data/create", parameters: params)
+    }
 }
+

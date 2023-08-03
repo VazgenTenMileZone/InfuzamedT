@@ -156,7 +156,7 @@ extension BloodPressureViewController: AHDeviceDataDelegate {
                                      "bloodPressure": String(format: "%d/%d", data.systolic, data.diastolic),
                                      "heartRate": String(format: "%d", data.pulse),
                                      "measurementTime": Date().dateToISO8601String(),
-                                     "uid": uid]
+                                     "userId": uid]
 
         NetworkManager.post(urlString: "http://ec2-54-215-231-89.us-west-1.compute.amazonaws.com:8085/api/data/create", parameters: params)
     }

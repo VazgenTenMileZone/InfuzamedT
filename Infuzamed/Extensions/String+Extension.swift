@@ -14,9 +14,7 @@ extension String {
 
         guard parts.count == 3 else { return nil}
 
-        let header = parts[0]
         let payload = parts[1]
-        let signature = parts[2]
         
         var stringTobeEncoded = payload.replacingOccurrences(of: "-", with: "+")
             .replacingOccurrences(of: "_", with: "/")

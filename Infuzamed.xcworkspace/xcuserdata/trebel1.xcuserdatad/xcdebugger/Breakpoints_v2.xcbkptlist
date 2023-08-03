@@ -7,23 +7,39 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "DE85D3A2-B76B-4079-910B-060C81867811"
+            uuid = "135736CC-110B-4618-9765-D0A30D8552A6"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Infuzamed/Controllers/BloodPressure/BloodPressureViewController.swift"
+            filePath = "Infuzamed/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "155"
-            endingLineNumber = "155"
-            landmarkName = "sendDataToServer(data:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "post(urlString:parameters:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7D76BE2C-2B56-4F2C-991E-25E75E38387A"
+            uuid = "059E315F-9E44-4FF2-AAFC-7F72DAA27B69"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "post(urlString:parameters:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0597FFFD-A2F2-41F8-99B1-10B53D4C8B1F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -36,7 +52,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7D76BE2C-2B56-4F2C-991E-25E75E38387A - 7256bf6799bbf685"
+                  uuid = "0597FFFD-A2F2-41F8-99B1-10B53D4C8B1F - 7256bf6799bbf685"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -51,7 +67,7 @@
                   offsetFromSymbolStart = "188">
                </Location>
                <Location
-                  uuid = "7D76BE2C-2B56-4F2C-991E-25E75E38387A - 7256bf6799bbf685"
+                  uuid = "0597FFFD-A2F2-41F8-99B1-10B53D4C8B1F - 7256bf6799bbf685"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -71,16 +87,64 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A00F9484-F714-4E7F-93AF-9AA68411B755"
+            uuid = "3923865B-ACB1-44B5-806F-771E1638146C"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Infuzamed/Controllers/BloodPressure/BloodPressureViewController.swift"
+            filePath = "Infuzamed/Managers/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "sendDataToServer(data:)"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "post(urlString:parameters:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3923865B-ACB1-44B5-806F-771E1638146C - 5134d075ef289433"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 1 of static Infuzamed.NetworkManager.post(urlString: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/Infuzamed/Infuzamed/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "3923865B-ACB1-44B5-806F-771E1638146C - b003834fa5d6e0fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Infuzamed.NetworkManager.post(urlString: Swift.String, parameters: Swift.Dictionary&lt;Swift.String, Any&gt;) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/Project/Infuzamed/Infuzamed/Managers/NetworkManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80FC0DBC-45E2-4635-A038-EF4ECCCAF775"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Managers/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "post(urlString:parameters:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

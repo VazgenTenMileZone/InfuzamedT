@@ -35,7 +35,7 @@ class PipesView: UIView {
     
     func configView(currentV: Int, minV: Int, maxV: Int, colors: [UIColor]) {
         guard currentV > minV, currentV < maxV else { return }
-        valueStackView.arrangedSubviews.forEach({$0.removeFromSuperview()})
+        valueStackView.arrangedSubviews.forEach { $0.removeFromSuperview() }
         self.colors = colors
         currentValue = currentV
         minValue = minV
@@ -77,7 +77,7 @@ private extension PipesView {
         let percent = (currentValue - minValue) * 100 / (maxValue - minValue)
         let roundedValue = Double(percent / 25).rounded(.down)
         
-        for i in 1...min(colors.count - 1, Int(roundedValue)) {
+        for i in 0 ... min(colors.count - 1, Int(roundedValue)) {
             gradientLayer.colors?.insert(colors[i].cgColor, at: 0)
         }
         
@@ -147,7 +147,6 @@ private extension PipesView {
         ])
         return stackView
     }
-    
     
     func updateLocalConstraints() {
         frontView.roundCorners(corners: .allCorners, radius: 25)

@@ -34,6 +34,8 @@ class PipesView: UIView {
     }
     
     func configView(currentV: Int, minV: Int, maxV: Int, colors: [UIColor]) {
+        guard currentV > minV, currentV < maxV else { return }
+        valueStackView.arrangedSubviews.forEach({$0.removeFromSuperview()})
         self.colors = colors
         currentValue = currentV
         minValue = minV
@@ -56,6 +58,10 @@ private extension PipesView {
     }
     
     func calculateGradient() {
+        if let gradientLayer {
+            gradientLayer.colors?.removeAll()
+        }
+        
         layoutIfNeeded()
         
         gradientLayer = CAGradientLayer()

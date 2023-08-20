@@ -16,6 +16,8 @@ class MenuCollectionViewCell: UICollectionViewCell {
     }
 
     func configure(item: MenuItems) {
+        let alpa = item == .bloodPressure ? 1 : 0.3
         imageView.image = UIImage(named: item.rawValue)
+        imageView.alpha = alpa
     }
 }

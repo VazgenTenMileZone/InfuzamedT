@@ -24,25 +24,64 @@
 		312623502A6698ED00A7BB98 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126234F2A6698ED00A7BB98 /* BaseViewController.swift */; };
 		312DB4C92A65C81000455129 /* BloodPressureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312DB4C72A65C81000455129 /* BloodPressureViewController.swift */; };
 		312DB4CA2A65C81000455129 /* BloodPressureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 312DB4C82A65C81000455129 /* BloodPressureViewController.xib */; };
+		3136A1CD2A881B8700ABE100 /* ScrollableGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1C82A881B8700ABE100 /* ScrollableGraphView.swift */; };
+		3136A1D62A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1CF2A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift */; };
+		3136A1D72A881C4300ABE100 /* ReferenceLineDrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D02A881C4300ABE100 /* ReferenceLineDrawingView.swift */; };
+		3136A1D82A881C4300ABE100 /* BarDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D12A881C4300ABE100 /* BarDrawingLayer.swift */; };
+		3136A1D92A881C4300ABE100 /* DotDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D22A881C4300ABE100 /* DotDrawingLayer.swift */; };
+		3136A1DA2A881C4300ABE100 /* GradientDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D32A881C4300ABE100 /* GradientDrawingLayer.swift */; };
+		3136A1DB2A881C4300ABE100 /* FillDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D42A881C4300ABE100 /* FillDrawingLayer.swift */; };
+		3136A1DC2A881C4300ABE100 /* LineDrawingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1D52A881C4300ABE100 /* LineDrawingLayer.swift */; };
+		3136A1E02A881C5F00ABE100 /* GraphPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1DE2A881C5F00ABE100 /* GraphPoint.swift */; };
+		3136A1E12A881C5F00ABE100 /* GraphPointAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1DF2A881C5F00ABE100 /* GraphPointAnimation.swift */; };
+		3136A1E62A881C6200ABE100 /* DotPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1E32A881C6200ABE100 /* DotPlot.swift */; };
+		3136A1E72A881C6200ABE100 /* BarPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1E22A881C6200ABE100 /* BarPlot.swift */; };
+		3136A1E82A881C6200ABE100 /* LinePlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1E42A881C6200ABE100 /* LinePlot.swift */; };
+		3136A1E92A881C6200ABE100 /* Plot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1E52A881C6200ABE100 /* Plot.swift */; };
+		3136A1ED2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1EB2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift */; };
+		3136A1EE2A881C7D00ABE100 /* ScrollableGraphViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1EC2A881C7D00ABE100 /* ScrollableGraphViewDataSource.swift */; };
+		3136A1F32A881D0000ABE100 /* LabelPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1F12A881D0000ABE100 /* LabelPool.swift */; };
+		3136A1F42A881D0000ABE100 /* ReferenceLines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3136A1F22A881D0000ABE100 /* ReferenceLines.swift */; };
+		313746AF2A8800460054274B /* ECGChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313746AE2A8800460054274B /* ECGChartView.swift */; };
+		3144D5522A87D60A00A8F84E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5482A87D60A00A8F84E /* SVRadialGradientLayer.m */; };
+		3144D5532A87D60A00A8F84E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5492A87D60A00A8F84E /* SVProgressHUD.m */; };
+		3144D5542A87D60A00A8F84E /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D54A2A87D60A00A8F84E /* SVProgressAnimatedView.m */; };
+		3144D5552A87D60A00A8F84E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D54D2A87D60A00A8F84E /* SVIndefiniteAnimatedView.m */; };
+		3144D5562A87D60A00A8F84E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3144D54F2A87D60A00A8F84E /* SVProgressHUD.bundle */; };
+		3144D55E2A87D64000A8F84E /* VTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D55B2A87D64000A8F84E /* VTDevice.m */; };
+		3144D55F2A87D64000A8F84E /* VTBLEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D55C2A87D64000A8F84E /* VTBLEUtils.m */; };
+		3144D5622A87D65300A8F84E /* VTProLibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3144D5612A87D65300A8F84E /* VTProLibBundle.bundle */; };
+		3144D56C2A87F22200A8F84E /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5652A87F22200A8F84E /* MenuList.swift */; };
+		3144D56D2A87F22200A8F84E /* DeviceInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5662A87F22200A8F84E /* DeviceInformationVc.swift */; };
+		3144D56E2A87F22200A8F84E /* ScannerDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5672A87F22200A8F84E /* ScannerDeviceCell.swift */; };
+		3144D56F2A87F22200A8F84E /* ScannerVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5682A87F22200A8F84E /* ScannerVc.swift */; };
+		3144D5702A87F22200A8F84E /* DataListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5692A87F22200A8F84E /* DataListView.swift */; };
+		3144D5712A87F22200A8F84E /* ExlistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D56A2A87F22200A8F84E /* ExlistVC.swift */; };
+		3144D5722A87F22200A8F84E /* UserListVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D56B2A87F22200A8F84E /* UserListVc.swift */; };
+		3144D5742A87F23E00A8F84E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3144D5732A87F23E00A8F84E /* Main.storyboard */; };
 		31516B9B2A607D9000FCD4A8 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31516B9A2A607D9000FCD4A8 /* LoginManager.swift */; };
 		31567B8F2A67B63300639907 /* LinkedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31567B8E2A67B63300639907 /* LinkedLabel.swift */; };
-		316C5C012A66D8FC00BA2E7C /* AHDevicePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; };
-		316C5C022A66D8FC00BA2E7C /* AHDevicePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		318E94F02A76815A00361AC8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318E94EF2A76815A00361AC8 /* NetworkManager.swift */; };
 		319038C42A7AFCE2003895FB /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319038C32A7AFCE2003895FB /* String+Extension.swift */; };
 		319CA4722A6569AF0065681E /* PipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319CA4712A6569AF0065681E /* PipesView.swift */; };
 		319CA4742A6569B80065681E /* PipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CA4732A6569B80065681E /* PipesView.xib */; };
 		319CA4762A656FBC0065681E /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319CA4752A656FBC0065681E /* UIVIew+Extension.swift */; };
+		31ACCF292AD1704200F588E0 /* Pods_Infuzamed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17A350C18E4457BD2848A97 /* Pods_Infuzamed.framework */; };
+		31ACCF2B2AD1706A00F588E0 /* AHDevicePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; };
+		31ACCF2C2AD1706A00F588E0 /* AHDevicePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31ACCF2E2AD176C000F588E0 /* VTProLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C1BE082AD14502007E786A /* VTProLib.framework */; };
+		31ACCF322AD1791E00F588E0 /* ECGViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */; };
+		31ACCF332AD1791E00F588E0 /* ECGViewCoontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3144436C2A66C82D00A9429A /* Embed Frameworks */ = {
+		31ACCF2D2AD1706A00F588E0 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				316C5C022A66D8FC00BA2E7C /* AHDevicePlugin.framework in Embed Frameworks */,
+				31ACCF2C2AD1706A00F588E0 /* AHDevicePlugin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +89,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		187864BD58123B8552A50368 /* Pods-Infuzamed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infuzamed.release.xcconfig"; path = "Target Support Files/Pods-Infuzamed/Pods-Infuzamed.release.xcconfig"; sourceTree = "<group>"; };
 		310BF9652A7AF682006C2778 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		3116A4062A60669400717911 /* Infuzamed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Infuzamed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3116A4092A60669400717911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +109,48 @@
 		3126234F2A6698ED00A7BB98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		312DB4C72A65C81000455129 /* BloodPressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureViewController.swift; sourceTree = "<group>"; };
 		312DB4C82A65C81000455129 /* BloodPressureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		3136A1C82A881B8700ABE100 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
+		3136A1CF2A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1D02A881C4300ABE100 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
+		3136A1D12A881C4300ABE100 /* BarDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1D22A881C4300ABE100 /* DotDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1D32A881C4300ABE100 /* GradientDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1D42A881C4300ABE100 /* FillDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FillDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1D52A881C4300ABE100 /* LineDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineDrawingLayer.swift; sourceTree = "<group>"; };
+		3136A1DE2A881C5F00ABE100 /* GraphPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPoint.swift; sourceTree = "<group>"; };
+		3136A1DF2A881C5F00ABE100 /* GraphPointAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphPointAnimation.swift; sourceTree = "<group>"; };
+		3136A1E22A881C6200ABE100 /* BarPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarPlot.swift; sourceTree = "<group>"; };
+		3136A1E32A881C6200ABE100 /* DotPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotPlot.swift; sourceTree = "<group>"; };
+		3136A1E42A881C6200ABE100 /* LinePlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePlot.swift; sourceTree = "<group>"; };
+		3136A1E52A881C6200ABE100 /* Plot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Plot.swift; sourceTree = "<group>"; };
+		3136A1EB2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewDrawingDelegate.swift; sourceTree = "<group>"; };
+		3136A1EC2A881C7D00ABE100 /* ScrollableGraphViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewDataSource.swift; sourceTree = "<group>"; };
+		3136A1F12A881D0000ABE100 /* LabelPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelPool.swift; sourceTree = "<group>"; };
+		3136A1F22A881D0000ABE100 /* ReferenceLines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLines.swift; sourceTree = "<group>"; };
+		313746AE2A8800460054274B /* ECGChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGChartView.swift; sourceTree = "<group>"; };
+		3144D5482A87D60A00A8F84E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		3144D5492A87D60A00A8F84E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		3144D54A2A87D60A00A8F84E /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		3144D54B2A87D60A00A8F84E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		3144D54C2A87D60A00A8F84E /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		3144D54D2A87D60A00A8F84E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3144D54E2A87D60A00A8F84E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3144D54F2A87D60A00A8F84E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		3144D5502A87D60A00A8F84E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		3144D5512A87D60A00A8F84E /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		3144D55A2A87D64000A8F84E /* VTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDevice.h; sourceTree = "<group>"; };
+		3144D55B2A87D64000A8F84E /* VTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDevice.m; sourceTree = "<group>"; };
+		3144D55C2A87D64000A8F84E /* VTBLEUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTBLEUtils.m; sourceTree = "<group>"; };
+		3144D55D2A87D64000A8F84E /* VTBLEUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTBLEUtils.h; sourceTree = "<group>"; };
+		3144D5612A87D65300A8F84E /* VTProLibBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = VTProLibBundle.bundle; sourceTree = "<group>"; };
+		3144D5652A87F22200A8F84E /* MenuList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
+		3144D5662A87F22200A8F84E /* DeviceInformationVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceInformationVc.swift; sourceTree = "<group>"; };
+		3144D5672A87F22200A8F84E /* ScannerDeviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerDeviceCell.swift; sourceTree = "<group>"; };
+		3144D5682A87F22200A8F84E /* ScannerVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerVc.swift; sourceTree = "<group>"; };
+		3144D5692A87F22200A8F84E /* DataListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataListView.swift; sourceTree = "<group>"; };
+		3144D56A2A87F22200A8F84E /* ExlistVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExlistVC.swift; sourceTree = "<group>"; };
+		3144D56B2A87F22200A8F84E /* UserListVc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListVc.swift; sourceTree = "<group>"; };
+		3144D5732A87F23E00A8F84E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		31516B9A2A607D9000FCD4A8 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		31567B8E2A67B63300639907 /* LinkedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedLabel.swift; sourceTree = "<group>"; };
 		316C5BFD2A66D78D00BA2E7C /* Infuzamed-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Infuzamed-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -78,6 +160,11 @@
 		319CA4712A6569AF0065681E /* PipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipesView.swift; sourceTree = "<group>"; };
 		319CA4732A6569B80065681E /* PipesView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PipesView.xib; sourceTree = "<group>"; };
 		319CA4752A656FBC0065681E /* UIVIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Extension.swift"; sourceTree = "<group>"; };
+		31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGViewCoontroller.swift; sourceTree = "<group>"; };
+		31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECGViewCoontroller.xib; sourceTree = "<group>"; };
+		31C1BE082AD14502007E786A /* VTProLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VTProLib.framework; sourceTree = "<group>"; };
+		B17A350C18E4457BD2848A97 /* Pods_Infuzamed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infuzamed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCD6A971716603B79E512C0 /* Pods-Infuzamed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Infuzamed.debug.xcconfig"; path = "Target Support Files/Pods-Infuzamed/Pods-Infuzamed.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +172,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				316C5C012A66D8FC00BA2E7C /* AHDevicePlugin.framework in Frameworks */,
+				31ACCF2B2AD1706A00F588E0 /* AHDevicePlugin.framework in Frameworks */,
+				31ACCF292AD1704200F588E0 /* Pods_Infuzamed.framework in Frameworks */,
+				31ACCF2E2AD176C000F588E0 /* VTProLib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +184,9 @@
 		0E9E158284F94F30911A81B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31C1BE082AD14502007E786A /* VTProLib.framework */,
 				316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */,
+				B17A350C18E4457BD2848A97 /* Pods_Infuzamed.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -121,6 +212,7 @@
 		3116A4082A60669400717911 /* Infuzamed */ = {
 			isa = PBXGroup;
 			children = (
+				3136A1C32A881B4E00ABE100 /* SDK-Supported-File */,
 				31516B992A607D8700FCD4A8 /* Managers */,
 				3116A42A2A606B2A00717911 /* Controllers */,
 				3116A4292A606B1600717911 /* Base */,
@@ -151,6 +243,7 @@
 				3116A4252A606AFC00717911 /* FlexibleView.swift */,
 				3116A4272A606B0B00717911 /* GradientView.swift */,
 				31567B8E2A67B63300639907 /* LinkedLabel.swift */,
+				313746AE2A8800460054274B /* ECGChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,6 +261,7 @@
 		3116A42A2A606B2A00717911 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3144D5342A87D5BF00A8F84E /* ECG */,
 				3116A42B2A606B3C00717911 /* Login */,
 				3116A4302A606E9700717911 /* Menu */,
 				312DB4C62A65C7D400455129 /* BloodPressure */,
@@ -212,6 +306,127 @@
 			path = BloodPressure;
 			sourceTree = "<group>";
 		};
+		3136A1C32A881B4E00ABE100 /* SDK-Supported-File */ = {
+			isa = PBXGroup;
+			children = (
+				3144D5592A87D63400A8F84E /* VTBLE */,
+				3136A1F02A881C9D00ABE100 /* ScrollableGraphView */,
+			);
+			path = "SDK-Supported-File";
+			sourceTree = "<group>";
+		};
+		3136A1CE2A881C3500ABE100 /* Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				3136A1D12A881C4300ABE100 /* BarDrawingLayer.swift */,
+				3136A1D22A881C4300ABE100 /* DotDrawingLayer.swift */,
+				3136A1D42A881C4300ABE100 /* FillDrawingLayer.swift */,
+				3136A1D32A881C4300ABE100 /* GradientDrawingLayer.swift */,
+				3136A1D52A881C4300ABE100 /* LineDrawingLayer.swift */,
+				3136A1D02A881C4300ABE100 /* ReferenceLineDrawingView.swift */,
+				3136A1CF2A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift */,
+			);
+			path = Drawing;
+			sourceTree = "<group>";
+		};
+		3136A1DD2A881C4F00ABE100 /* Plots */ = {
+			isa = PBXGroup;
+			children = (
+				3136A1E22A881C6200ABE100 /* BarPlot.swift */,
+				3136A1E32A881C6200ABE100 /* DotPlot.swift */,
+				3136A1E42A881C6200ABE100 /* LinePlot.swift */,
+				3136A1E52A881C6200ABE100 /* Plot.swift */,
+				3136A1DE2A881C5F00ABE100 /* GraphPoint.swift */,
+				3136A1DF2A881C5F00ABE100 /* GraphPointAnimation.swift */,
+			);
+			path = Plots;
+			sourceTree = "<group>";
+		};
+		3136A1EA2A881C7500ABE100 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3136A1EC2A881C7D00ABE100 /* ScrollableGraphViewDataSource.swift */,
+				3136A1EB2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3136A1EF2A881C8500ABE100 /* Reference */ = {
+			isa = PBXGroup;
+			children = (
+				3136A1F12A881D0000ABE100 /* LabelPool.swift */,
+				3136A1F22A881D0000ABE100 /* ReferenceLines.swift */,
+				3136A1C82A881B8700ABE100 /* ScrollableGraphView.swift */,
+			);
+			path = Reference;
+			sourceTree = "<group>";
+		};
+		3136A1F02A881C9D00ABE100 /* ScrollableGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				3136A1EF2A881C8500ABE100 /* Reference */,
+				3136A1EA2A881C7500ABE100 /* Protocols */,
+				3136A1DD2A881C4F00ABE100 /* Plots */,
+				3136A1CE2A881C3500ABE100 /* Drawing */,
+			);
+			path = ScrollableGraphView;
+			sourceTree = "<group>";
+		};
+		3144D5342A87D5BF00A8F84E /* ECG */ = {
+			isa = PBXGroup;
+			children = (
+				3144D5692A87F22200A8F84E /* DataListView.swift */,
+				3144D5662A87F22200A8F84E /* DeviceInformationVc.swift */,
+				3144D56A2A87F22200A8F84E /* ExlistVC.swift */,
+				3144D5652A87F22200A8F84E /* MenuList.swift */,
+				3144D5672A87F22200A8F84E /* ScannerDeviceCell.swift */,
+				3144D5682A87F22200A8F84E /* ScannerVc.swift */,
+				3144D56B2A87F22200A8F84E /* UserListVc.swift */,
+				3144D5352A87D5ED00A8F84E /* SVProgressHUD */,
+				31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */,
+				31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */,
+			);
+			path = ECG;
+			sourceTree = "<group>";
+		};
+		3144D5352A87D5ED00A8F84E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3144D54E2A87D60A00A8F84E /* SVIndefiniteAnimatedView.h */,
+				3144D54D2A87D60A00A8F84E /* SVIndefiniteAnimatedView.m */,
+				3144D5512A87D60A00A8F84E /* SVProgressAnimatedView.h */,
+				3144D54A2A87D60A00A8F84E /* SVProgressAnimatedView.m */,
+				3144D54C2A87D60A00A8F84E /* SVProgressHUD-Prefix.pch */,
+				3144D54F2A87D60A00A8F84E /* SVProgressHUD.bundle */,
+				3144D5502A87D60A00A8F84E /* SVProgressHUD.h */,
+				3144D5732A87F23E00A8F84E /* Main.storyboard */,
+				3144D5492A87D60A00A8F84E /* SVProgressHUD.m */,
+				3144D54B2A87D60A00A8F84E /* SVRadialGradientLayer.h */,
+				3144D5482A87D60A00A8F84E /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		3144D5592A87D63400A8F84E /* VTBLE */ = {
+			isa = PBXGroup;
+			children = (
+				3144D5602A87D64B00A8F84E /* SDK-SourceCode */,
+				3144D55D2A87D64000A8F84E /* VTBLEUtils.h */,
+				3144D55C2A87D64000A8F84E /* VTBLEUtils.m */,
+				3144D55A2A87D64000A8F84E /* VTDevice.h */,
+				3144D55B2A87D64000A8F84E /* VTDevice.m */,
+			);
+			path = VTBLE;
+			sourceTree = "<group>";
+		};
+		3144D5602A87D64B00A8F84E /* SDK-SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				3144D5612A87D65300A8F84E /* VTProLibBundle.bundle */,
+			);
+			path = "SDK-SourceCode";
+			sourceTree = "<group>";
+		};
 		31516B992A607D8700FCD4A8 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +457,8 @@
 		5739422873B25EC430C4E7DD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				FDCD6A971716603B79E512C0 /* Pods-Infuzamed.debug.xcconfig */,
+				187864BD58123B8552A50368 /* Pods-Infuzamed.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -253,10 +470,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3116A41A2A60669600717911 /* Build configuration list for PBXNativeTarget "Infuzamed" */;
 			buildPhases = (
+				DCE78AA628C5579E7188B5C4 /* [CP] Check Pods Manifest.lock */,
 				3116A4022A60669400717911 /* Sources */,
 				3116A4032A60669400717911 /* Frameworks */,
 				3116A4042A60669400717911 /* Resources */,
-				3144436C2A66C82D00A9429A /* Embed Frameworks */,
+				31ACCF2D2AD1706A00F588E0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,39 +527,101 @@
 			buildActionMask = 2147483647;
 			files = (
 				3116A4162A60669600717911 /* LaunchScreen.storyboard in Resources */,
+				3144D5622A87D65300A8F84E /* VTProLibBundle.bundle in Resources */,
 				3116A4132A60669600717911 /* Assets.xcassets in Resources */,
 				319CA4742A6569B80065681E /* PipesView.xib in Resources */,
+				3144D5562A87D60A00A8F84E /* SVProgressHUD.bundle in Resources */,
+				3144D5742A87F23E00A8F84E /* Main.storyboard in Resources */,
 				3116A4392A606FB600717911 /* MenuCollectionViewCell.xib in Resources */,
 				312DB4CA2A65C81000455129 /* BloodPressureViewController.xib in Resources */,
 				3116A42F2A606B4F00717911 /* LoginViewController.xib in Resources */,
+				31ACCF332AD1791E00F588E0 /* ECGViewCoontroller.xib in Resources */,
 				3116A4342A606EA700717911 /* MenuViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DCE78AA628C5579E7188B5C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Infuzamed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3116A4022A60669400717911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3136A1F42A881D0000ABE100 /* ReferenceLines.swift in Sources */,
+				3136A1EE2A881C7D00ABE100 /* ScrollableGraphViewDataSource.swift in Sources */,
+				3136A1D92A881C4300ABE100 /* DotDrawingLayer.swift in Sources */,
 				312623502A6698ED00A7BB98 /* BaseViewController.swift in Sources */,
+				3136A1D82A881C4300ABE100 /* BarDrawingLayer.swift in Sources */,
+				3136A1F32A881D0000ABE100 /* LabelPool.swift in Sources */,
 				3116A42E2A606B4F00717911 /* LoginViewController.swift in Sources */,
 				3116A4262A606AFD00717911 /* FlexibleView.swift in Sources */,
+				3136A1E72A881C6200ABE100 /* BarPlot.swift in Sources */,
+				3136A1ED2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
+				313746AF2A8800460054274B /* ECGChartView.swift in Sources */,
+				3136A1CD2A881B8700ABE100 /* ScrollableGraphView.swift in Sources */,
+				3144D55E2A87D64000A8F84E /* VTDevice.m in Sources */,
 				3116A4282A606B0B00717911 /* GradientView.swift in Sources */,
+				31ACCF322AD1791E00F588E0 /* ECGViewCoontroller.swift in Sources */,
 				3116A4382A606FB600717911 /* MenuCollectionViewCell.swift in Sources */,
+				3136A1E62A881C6200ABE100 /* DotPlot.swift in Sources */,
+				3136A1E82A881C6200ABE100 /* LinePlot.swift in Sources */,
+				3144D5722A87F22200A8F84E /* UserListVc.swift in Sources */,
+				3136A1D72A881C4300ABE100 /* ReferenceLineDrawingView.swift in Sources */,
 				310BF9662A7AF682006C2778 /* Date+Extension.swift in Sources */,
 				312DB4C92A65C81000455129 /* BloodPressureViewController.swift in Sources */,
 				3116A4332A606EA700717911 /* MenuViewController.swift in Sources */,
+				3136A1DA2A881C4300ABE100 /* GradientDrawingLayer.swift in Sources */,
+				3144D56E2A87F22200A8F84E /* ScannerDeviceCell.swift in Sources */,
+				3144D55F2A87D64000A8F84E /* VTBLEUtils.m in Sources */,
+				3136A1E12A881C5F00ABE100 /* GraphPointAnimation.swift in Sources */,
+				3144D5712A87F22200A8F84E /* ExlistVC.swift in Sources */,
 				319038C42A7AFCE2003895FB /* String+Extension.swift in Sources */,
+				3136A1DC2A881C4300ABE100 /* LineDrawingLayer.swift in Sources */,
+				3144D5532A87D60A00A8F84E /* SVProgressHUD.m in Sources */,
+				3144D56F2A87F22200A8F84E /* ScannerVc.swift in Sources */,
 				31516B9B2A607D9000FCD4A8 /* LoginManager.swift in Sources */,
 				319CA4762A656FBC0065681E /* UIVIew+Extension.swift in Sources */,
 				3116A40A2A60669400717911 /* AppDelegate.swift in Sources */,
 				3116A40C2A60669400717911 /* SceneDelegate.swift in Sources */,
+				3144D5542A87D60A00A8F84E /* SVProgressAnimatedView.m in Sources */,
+				3136A1DB2A881C4300ABE100 /* FillDrawingLayer.swift in Sources */,
+				3144D56D2A87F22200A8F84E /* DeviceInformationVc.swift in Sources */,
+				3144D5552A87D60A00A8F84E /* SVIndefiniteAnimatedView.m in Sources */,
+				3136A1E02A881C5F00ABE100 /* GraphPoint.swift in Sources */,
+				3136A1D62A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift in Sources */,
+				3144D5702A87F22200A8F84E /* DataListView.swift in Sources */,
 				319CA4722A6569AF0065681E /* PipesView.swift in Sources */,
+				3144D5522A87D60A00A8F84E /* SVRadialGradientLayer.m in Sources */,
 				318E94F02A76815A00361AC8 /* NetworkManager.swift in Sources */,
 				31567B8F2A67B63300639907 /* LinkedLabel.swift in Sources */,
 				3116A4232A606AD800717911 /* UIColor+Extension.swift in Sources */,
+				3136A1E92A881C6200ABE100 /* Plot.swift in Sources */,
+				3144D56C2A87F22200A8F84E /* MenuList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,11 +755,12 @@
 		};
 		3116A41B2A60669600717911 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDCD6A971716603B79E512C0 /* Pods-Infuzamed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -488,13 +769,16 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Infuzamed/Supporting Files/info.plist";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
+				INFOPLIST_KEY_CFBundleDisplayName = Infuzamed;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need access to Bluetooth to connect and communicate with nearby devices.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Your app needs access to the local network to discover nearby devices and provide sharing functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,11 +803,12 @@
 		};
 		3116A41C2A60669600717911 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 187864BD58123B8552A50368 /* Pods-Infuzamed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,13 +817,16 @@
 				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Infuzamed/Supporting Files/info.plist";
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
+				INFOPLIST_KEY_CFBundleDisplayName = Infuzamed;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "We need access to Bluetooth to connect and communicate with nearby devices.";
 				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This allows you to connect with your BLE devices via Bluetooth.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Your app needs access to the local network to discover nearby devices and provide sharing functionality.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

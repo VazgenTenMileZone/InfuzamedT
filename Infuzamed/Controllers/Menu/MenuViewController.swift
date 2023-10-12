@@ -56,6 +56,9 @@ extension MenuViewController: UICollectionViewDataSource, UICollectionViewDelega
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if menuItems[indexPath.row] == .bloodPressure {
             navigationController?.pushViewController(BloodPressureViewController(), animated: true)
+        } else {
+            let vc = ScannerVc().getViewControllerFromStoryboard()
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

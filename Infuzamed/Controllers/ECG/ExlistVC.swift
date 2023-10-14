@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 class ExlistVC: BaseViewController, VTProCommunicateDelegate {
     var listArray: [VTProEXHistory] = []
+    var selectedEcgDate = ""
     @IBOutlet var tblView: UITableView!
     override func viewDidLoad() {
         tblView.tableFooterView = UIView(frame: CGRect.zero)
@@ -67,7 +68,7 @@ class ExlistVC: BaseViewController, VTProCommunicateDelegate {
             if fileData.enLoadResult == VTProFileLoadResultSuccess {
                 VTProFileParser.parseECGDetail(withFileData: fileData.fileData as Data, callBack: { [weak self] header, ecgContent in
                     // Detail data
-                    let ecgVC  = ECGViewCoontroller(egcProggresData: ecgContent as! [Double], hearRate: Int(header.hrResult))
+                    let ecgVC  = ECGViewCoontroller(egcProggresData: ecgContent as! [Double], hearRate: Int(header.hrResult), selectedEcgDate: self?.selectedEcgDate ?? "")
                     self?.navigationController?.pushViewController(ecgVC, animated: true)
                     print("Heart rate is %d", header.hrResult)
                     self?.hideLoder()
@@ -95,7 +96,8 @@ extension ExlistVC: UITableViewDelegate, UITableViewDataSource {
         }
         let model = listArray[indexPath.row]
         let dc = (model as AnyObject).value(forKey: "dtcDate") as? DateComponents
-        cell?.textLabel?.text = String(format: "%04ld-%02ld-%02ld %02ld:%02ld:%02ld", Int(dc?.year ?? 0), Int(dc?.month ?? 0), Int(dc?.day ?? 0), Int(dc?.hour ?? 0), Int(dc?.minute ?? 0), Int(dc?.second ?? 0))
+        selectedEcgDate = String(format: "%04ld-%02ld-%02ld %02ld:%02ld:%02ld", Int(dc?.year ?? 0), Int(dc?.month ?? 0), Int(dc?.day ?? 0), Int(dc?.hour ?? 0), Int(dc?.minute ?? 0), Int(dc?.second ?? 0))
+        cell?.textLabel?.text = selectedEcgDate
         return cell!
     }
 

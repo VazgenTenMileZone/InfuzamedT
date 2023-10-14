@@ -12,13 +12,15 @@ final class ECGViewCoontroller: UIViewController {
     var graphView: ScrollableGraphView?
     var egcProggresData: [Double] = []
     var heartRate: Int = 0
+    var selectedEcgDate = ""
     var linePlot = LinePlot(identifier: "line") // Identifier should be unique for each plot.
     var referenceLines = ReferenceLines()
 
-    convenience init(egcProggresData:[Double], hearRate: Int) {
+    convenience init(egcProggresData:[Double], hearRate: Int, selectedEcgDate: String) {
         self.init()
         self.egcProggresData = egcProggresData
         self.heartRate = hearRate
+        self.selectedEcgDate = selectedEcgDate
     }
     
     override func viewDidLoad() {
@@ -45,7 +47,8 @@ private extension ECGViewCoontroller {
         let params: [String: Any] = [
                                      "ekgData": egcProggresData,
                                      "heartRate": String(format: "%d", self.heartRate),
-                                     "userId": uid]
+                                     "userId": uid,
+                                     "createdAt": selectedEcgDate]
         NetworkManager.post(urlString: "http://ec2-54-215-231-89.us-west-1.compute.amazonaws.com:8085/api/data/create", parameters: params)
     }
 }

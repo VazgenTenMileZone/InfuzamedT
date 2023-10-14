@@ -6,7 +6,11 @@
 	<dict>
 		<key>Headers/VTProCommunicate.h</key>
 		<data>
+<<<<<<< HEAD
 		G09qIczMWram54PbSSyYqfhEzLY=
+=======
+		g6eACUdUGSWAZJ0ahkuBfjvtR5w=
+>>>>>>> development
 		</data>
 		<key>Headers/VTProDetailObject.h</key>
 		<data>
@@ -14,7 +18,11 @@
 		</data>
 		<key>Headers/VTProFileParser.h</key>
 		<data>
+<<<<<<< HEAD
 		hdykSn4aZzZIhM17O9fba0D4be8=
+=======
+		JKBPbbau9nc3ukA2wymIVf+mKeg=
+>>>>>>> development
 		</data>
 		<key>Headers/VTProInfo.h</key>
 		<data>
@@ -34,6 +42,7 @@
 		</data>
 		<key>Headers/VTProUser.h</key>
 		<data>
+<<<<<<< HEAD
 		AQYhdg+cIhTunzJa3+DLBk2QcrI=
 		</data>
 		<key>Headers/VTTypesDef.h</key>
@@ -43,6 +52,17 @@
 		<key>Info.plist</key>
 		<data>
 		yhIvnWnvjZJ6byaYnaARzp3glyU=
+=======
+		Oi5TM1aqx06VpOze4mUsEiOe6m8=
+		</data>
+		<key>Headers/VTTypesDef.h</key>
+		<data>
+		ay+/qi97jUG6DAtzuiAyo91zstc=
+		</data>
+		<key>Info.plist</key>
+		<data>
+		bh+cLjlfIREKiub8fYAp8gaOrvU=
+>>>>>>> development
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,11 +75,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			G09qIczMWram54PbSSyYqfhEzLY=
 			</data>
 			<key>hash2</key>
 			<data>
 			jqup8lZfc9j7S5Auj4FWyWyB5nJdTr3p6fxZLuoFvi4=
+=======
+			g6eACUdUGSWAZJ0ahkuBfjvtR5w=
+			</data>
+			<key>hash2</key>
+			<data>
+			jeYfAvT+qNXopPclrymdPAcWm2yN/xrKM301PGPvuUE=
+>>>>>>> development
 			</data>
 		</dict>
 		<key>Headers/VTProDetailObject.h</key>
@@ -77,11 +105,19 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			hdykSn4aZzZIhM17O9fba0D4be8=
 			</data>
 			<key>hash2</key>
 			<data>
 			t+FSF7lqWJ3tAe9HTYi8exlJdlbcY1HWUEprqtghhWo=
+=======
+			JKBPbbau9nc3ukA2wymIVf+mKeg=
+			</data>
+			<key>hash2</key>
+			<data>
+			9/wVJPfQI/MjBfeVh+VfMDALW8vSw6CkgYP8JpHQlFA=
+>>>>>>> development
 			</data>
 		</dict>
 		<key>Headers/VTProInfo.h</key>
@@ -132,22 +168,38 @@
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			AQYhdg+cIhTunzJa3+DLBk2QcrI=
 			</data>
 			<key>hash2</key>
 			<data>
 			ENZOfZuLTjI/yOm+e8DkgkvVqonxSEXjiD69knlxDZQ=
+=======
+			Oi5TM1aqx06VpOze4mUsEiOe6m8=
+			</data>
+			<key>hash2</key>
+			<data>
+			yd2fh28eXqp5IYBraW3ZCFlPs3PIqtrPGJpqo4s/6jo=
+>>>>>>> development
 			</data>
 		</dict>
 		<key>Headers/VTTypesDef.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
+<<<<<<< HEAD
 			iozXwNgmHIhl4u39DYxJi4UXfs4=
 			</data>
 			<key>hash2</key>
 			<data>
 			eAny2HXhBN4G8KYZ8jZ3YILUx8M61+PbiUHT4WSwJLQ=
+=======
+			ay+/qi97jUG6DAtzuiAyo91zstc=
+			</data>
+			<key>hash2</key>
+			<data>
+			4PYBPBfAoSAmG1EBlrbdD3hILesCOCbg80Msb2UHuzE=
+>>>>>>> development
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

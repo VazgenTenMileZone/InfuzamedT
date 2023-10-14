@@ -67,9 +67,9 @@
 		319CA4742A6569B80065681E /* PipesView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 319CA4732A6569B80065681E /* PipesView.xib */; };
 		319CA4762A656FBC0065681E /* UIVIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319CA4752A656FBC0065681E /* UIVIew+Extension.swift */; };
 		31ACCF292AD1704200F588E0 /* Pods_Infuzamed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17A350C18E4457BD2848A97 /* Pods_Infuzamed.framework */; };
-		31ACCF2B2AD1706A00F588E0 /* AHDevicePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; };
+		31ACCF2B2AD1706A00F588E0 /* AHDevicePlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		31ACCF2C2AD1706A00F588E0 /* AHDevicePlugin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 316C5BFF2A66D8ED00BA2E7C /* AHDevicePlugin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		31ACCF2E2AD176C000F588E0 /* VTProLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C1BE082AD14502007E786A /* VTProLib.framework */; };
+		31ACCF2E2AD176C000F588E0 /* VTProLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C1BE082AD14502007E786A /* VTProLib.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		31ACCF322AD1791E00F588E0 /* ECGViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */; };
 		31ACCF332AD1791E00F588E0 /* ECGViewCoontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */; };
 /* End PBXBuildFile section */
@@ -109,6 +109,7 @@
 		3126234F2A6698ED00A7BB98 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		312DB4C72A65C81000455129 /* BloodPressureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodPressureViewController.swift; sourceTree = "<group>"; };
 		312DB4C82A65C81000455129 /* BloodPressureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BloodPressureViewController.xib; sourceTree = "<group>"; };
+		31311AFC2AD8996800C353B0 /* VTProLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VTProLib.framework; sourceTree = "<group>"; };
 		3136A1C82A881B8700ABE100 /* ScrollableGraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphView.swift; sourceTree = "<group>"; };
 		3136A1CF2A881C4300ABE100 /* ScrollableGraphViewDrawingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollableGraphViewDrawingLayer.swift; sourceTree = "<group>"; };
 		3136A1D02A881C4300ABE100 /* ReferenceLineDrawingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReferenceLineDrawingView.swift; sourceTree = "<group>"; };
@@ -194,6 +195,7 @@
 		3116A3FD2A60669400717911 = {
 			isa = PBXGroup;
 			children = (
+				31311AFC2AD8996800C353B0 /* VTProLib.framework */,
 				3116A4082A60669400717911 /* Infuzamed */,
 				3116A4072A60669400717911 /* Products */,
 				5739422873B25EC430C4E7DD /* Pods */,
@@ -510,7 +512,6 @@
 			);
 			mainGroup = 3116A3FD2A60669400717911;
 			packageReferences = (
-				310BF9632A7AF49A006C2778 /* XCRemoteSwiftPackageReference "jwt-kit" */,
 			);
 			productRefGroup = 3116A4072A60669400717911 /* Products */;
 			projectDirPath = "";
@@ -760,7 +761,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -808,7 +809,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HNZK43LFT6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,17 +872,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		310BF9632A7AF49A006C2778 /* XCRemoteSwiftPackageReference "jwt-kit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/vapor/jwt-kit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 3116A3FE2A60669400717911 /* Project object */;
 }

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "3292DC21-AD40-43B0-B44D-D995E4FCFCEB"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F858E091-AE8D-4951-8690-1619024FB5F6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ScannerVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "serviceDeployed(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F858E091-AE8D-4951-8690-1619024FB5F6 - 52f6d8e378337c52"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.serviceDeployed(Swift.Bool) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "344">
+               </Location>
+               <Location
+                  uuid = "F858E091-AE8D-4951-8690-1619024FB5F6 - f8def3c3f3300a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.tableView(_: __C.UITableView, cellForRowAt: Foundation.IndexPath) -&gt; __C.UITableViewCell"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "252">
+               </Location>
+               <Location
+                  uuid = "F858E091-AE8D-4951-8690-1619024FB5F6 - 52f6d8e378337cef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.serviceDeployed(Swift.Bool) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "49AAE5A7-F653-4B87-99A3-5EE628F19386"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ScannerVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4BB5526C-51F0-42D9-8E46-9F8E937C71F4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ScannerVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC95E30D-C7F4-46F6-8515-34D42837F35A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/MenuList.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2076711-DEA7-443F-AAB3-7571F09399BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ExlistVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C2076711-DEA7-443F-AAB3-7571F09399BD - 11f49bcd10815fcb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ExlistVC.readComplete(withData: __C.VTProFileToRead) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ExlistVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "1716">
+               </Location>
+               <Location
+                  uuid = "C2076711-DEA7-443F-AAB3-7571F09399BD - 28720fb9c008ee4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ExlistVC.tableView(_: __C.UITableView, numberOfRowsInSection: Swift.Int) -&gt; Swift.Int"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ExlistVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E6246B5-666D-4546-9873-83C52C6337A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ScannerVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "update(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D3731B4-688E-4EC9-8BEF-2D9EF001B27E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/ECG/ScannerVc.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "didDisconnectedDevice(_:andError:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D3731B4-688E-4EC9-8BEF-2D9EF001B27E - 52f6d8e378337df7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.serviceDeployed(Swift.Bool) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "60"
+                  endingLineNumber = "60"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "9D3731B4-688E-4EC9-8BEF-2D9EF001B27E - 7bd08fb9467b094f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.didDisconnectedDevice(_: __C.VTDevice, andError: Swift.Error) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "9D3731B4-688E-4EC9-8BEF-2D9EF001B27E - 7bd08fb9467b094f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Infuzamed.ScannerVc.didDisconnectedDevice(_: __C.VTDevice, andError: Swift.Error) -&gt; ()"
+                  moduleName = "Infuzamed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vazgenhovakimyan/Documents/Vazgen%20Docs/Mkrtych/Infuzamed/Infuzamed/Controllers/ECG/ScannerVc.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32D168FA-0AC9-499B-A380-4071BF3F6FB4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/BloodPressure/DeviceList/DeviceListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "startScanning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "617ABB2A-616F-48F3-921C-29B116EDD96D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Infuzamed/Controllers/BloodPressure/DeviceList/DeviceListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "startScanning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

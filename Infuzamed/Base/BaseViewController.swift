@@ -22,7 +22,8 @@ class BaseViewController: UIViewController {
         view.addSubview(activityIndicator!)
     }
     
-    func showLoader() {
+    func showLoader(color: UIColor = .white) {
+        activityIndicator?.color = color
         DispatchQueue.main.async {
             self.activityIndicator!.startAnimating()
             self.view.isUserInteractionEnabled = false

@@ -7,6 +7,8 @@
 
 import Foundation
 import UIKit
+import CoreBluetooth
+
 class ExlistVC: BaseViewController, VTProCommunicateDelegate {
     var listArray: [VTProEXHistory] = []
     var selectedEcgDate = ""
@@ -89,16 +91,13 @@ extension ExlistVC: UITableViewDelegate, UITableViewDataSource {
     static let tableViewIdentifier = "exListCell"
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let tableViewIdentifier = "exListCell"
-        var cell = tableView.dequeueReusableCell(withIdentifier: tableViewIdentifier)
-        if cell == nil {
-            cell = UITableViewCell(style: .default, reuseIdentifier: tableViewIdentifier)
-        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ScannerDeviceCell", for: indexPath) as! ScannerDeviceCell
+
         let model = listArray[indexPath.row]
         let dc = (model as AnyObject).value(forKey: "dtcDate") as? DateComponents
         selectedEcgDate = String(format: "%04ld-%02ld-%02ld %02ld:%02ld:%02ld", Int(dc?.year ?? 0), Int(dc?.month ?? 0), Int(dc?.day ?? 0), Int(dc?.hour ?? 0), Int(dc?.minute ?? 0), Int(dc?.second ?? 0))
-        cell?.textLabel?.text = selectedEcgDate
-        return cell!
+        cell.deviceName.text = selectedEcgDate
+        return cell
     }
 
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -113,6 +112,6 @@ extension ExlistVC: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         let ex = listArray[indexPath.row] as! VTProEXHistory
         VTProCommunicate.sharedInstance().beginReadHistoryDetail(ex.recordTime)
-        showLoader()
+        showLoader(color: .black)
     }
 }

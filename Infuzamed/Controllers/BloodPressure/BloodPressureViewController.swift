@@ -19,16 +19,17 @@ class BloodPressureViewController: BaseViewController {
     @IBOutlet var pulsePipesView: PipesView!
 
     private var currentDevice: BTDeviceInfo?
+    
+    convenience init(device:  BTDeviceInfo) {
+        self.init()
+        currentDevice = device
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        showLoader()
-
-        startScanning { [weak self] in
-            guard let self else { return }
-            AHDevicePlugin.default()?.checkingBluetoothStatus(self)
-            self.connectDevice()
-        }
+        AHDevicePlugin.default()?.checkingBluetoothStatus(self)
+        self.connectDevice()
+        
     }
 
     override func viewWillLayoutSubviews() {
@@ -59,20 +60,10 @@ private extension BloodPressureViewController {
         titlesStackView.roundCorners(corners: .allCorners)
     }
 
-    func startScanning(succes: @escaping () -> Void) {
-        let filter = BTScanFilter()
-        filter.scanTypes = [BTDeviceType.bloodPressureMeter.rawValue]
-        AHDevicePlugin.default().searchDevice(filter) { device in
-            if let device {
-                self.currentDevice = device
-                succes()
-                return
-            }
-        }
-    }
+
 
     private func connectDevice() {
-        showLoader()
+        showLoader(color: .black)
         if !(AHDevicePlugin.default()!.isBluetoothPowerOn) {
             return
         }

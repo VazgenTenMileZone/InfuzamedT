@@ -1,0 +1,6 @@
+framework module Pods_Infuzamed_Health {
+  umbrella header "Pods-Infuzamed Health-umbrella.h"
+
+  export *
+  module * { export * }
+}

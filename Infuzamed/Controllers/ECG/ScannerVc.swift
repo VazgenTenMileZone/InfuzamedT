@@ -19,6 +19,7 @@ class ScannerVc: UIViewController, VTBLEUtilsDelegate, VTProCommunicateDelegate 
         VTBLEUtils.sharedInstance().delegate = self
         super.viewDidLoad()
         VTBLEUtils.sharedInstance().startScan()
+        title = "Scanner"
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -53,24 +54,18 @@ class ScannerVc: UIViewController, VTBLEUtilsDelegate, VTProCommunicateDelegate 
         VTProCommunicate.sharedInstance().delegate = self
     }
 
-    func didDisconnectedDevice(_ device: VTDevice, andError error: Error) {}
-
-    func serviceDeployed(_ completed: Bool) {
-        showAlert(withTitle: "Good !!!", message: "Start work", handler: { [self] _ in
-            performSegue(withIdentifier: "presentViewController", sender: nil)
-        })
+    func didDisconnectedDevice(_ device: VTDevice, andError error: Error) {
+        showAlert(text: "No connected device")
+    }
+    
+    func showAlert(text: String) {
+        let alert = UIAlertController(title: text, message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "ok", style: .default))
+        present(alert, animated: true, completion: nil)
     }
 
-    func showAlert(
-        withTitle title: String?,
-        message: String?,
-        handler: ((_ action: UIAlertAction?) -> Void)? = nil)
-    {
-        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
-
-        let confirAction = UIAlertAction(title: "OK", style: .default, handler: handler)
-        alertVC.addAction(confirAction)
-        present(alertVC, animated: true)
+    func serviceDeployed(_ completed: Bool) {
+        performSegue(withIdentifier: "presentViewController", sender: nil)
     }
 }
 

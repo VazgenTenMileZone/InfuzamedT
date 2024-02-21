@@ -23,11 +23,8 @@ extension UserListVc : UITableViewDelegate , UITableViewDataSource{
         return userArray.count
     }
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let identifier = "userListCell"
-    var cell = tableView.dequeueReusableCell(withIdentifier: identifier)
-    if cell == nil {
-        cell = UITableViewCell(style: .subtitle, reuseIdentifier: identifier)
-    }
+    let cell = tableView.dequeueReusableCell(withIdentifier: "ScannerDeviceCell", for: indexPath) as! ScannerDeviceCell
+  
     let u = userArray[indexPath.row]
     if  type(of: u) == VTProUser.self {
         let user = u as? VTProUser
@@ -37,20 +34,12 @@ extension UserListVc : UITableViewDelegate , UITableViewDataSource{
         if let iconID = user?.iconID {
             image = UIImage(contentsOfFile: imageBundle?.path(forResource: "ico\(iconID)", ofType: "png") ?? "")
         }
-        let imageSize = CGSize(width: 30, height: 30)
-        UIGraphicsBeginImageContextWithOptions(imageSize, false, 0.0)
-        let imageRect = CGRect(x: 0.0, y: 0.0, width: imageSize.width, height: imageSize.height)
-        image!.draw(in: imageRect)
-        cell?.imageView?.image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsGetImageFromCurrentImageContext()
-        cell?.textLabel?.text = user?.userName
-        cell?.detailTextLabel?.text = "\(user!.userID)"
+        cell.deviceName?.text = user?.userName
     }else{
         let xuser = u
-        cell?.textLabel?.text = (xuser as AnyObject).userName
-        cell?.detailTextLabel?.text = (xuser as AnyObject).patientID
+        cell.deviceName?.text = (xuser as AnyObject).userName
     }
-    return cell!
+    return cell
    }
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return false

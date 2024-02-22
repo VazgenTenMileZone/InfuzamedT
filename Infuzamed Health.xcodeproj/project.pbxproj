@@ -50,7 +50,6 @@
 		3144D5562A87D60A00A8F84E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3144D54F2A87D60A00A8F84E /* SVProgressHUD.bundle */; };
 		3144D55E2A87D64000A8F84E /* VTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D55B2A87D64000A8F84E /* VTDevice.m */; };
 		3144D55F2A87D64000A8F84E /* VTBLEUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3144D55C2A87D64000A8F84E /* VTBLEUtils.m */; };
-		3144D5622A87D65300A8F84E /* VTProLibBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3144D5612A87D65300A8F84E /* VTProLibBundle.bundle */; };
 		3144D56C2A87F22200A8F84E /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5652A87F22200A8F84E /* MenuList.swift */; };
 		3144D56D2A87F22200A8F84E /* DeviceInformationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5662A87F22200A8F84E /* DeviceInformationVc.swift */; };
 		3144D56E2A87F22200A8F84E /* ScannerDeviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144D5672A87F22200A8F84E /* ScannerDeviceCell.swift */; };
@@ -546,7 +545,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3116A4162A60669600717911 /* LaunchScreen.storyboard in Resources */,
-				3144D5622A87D65300A8F84E /* VTProLibBundle.bundle in Resources */,
 				3116A4132A60669600717911 /* Assets.xcassets in Resources */,
 				319CA4742A6569B80065681E /* PipesView.xib in Resources */,
 				38F91ED72B854C5E00D8383D /* DeviceListViewController.xib in Resources */,
@@ -783,7 +781,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = M78LTVTBTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -831,7 +829,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = M78LTVTBTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

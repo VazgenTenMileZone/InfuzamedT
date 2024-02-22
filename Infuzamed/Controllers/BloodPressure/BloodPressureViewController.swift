@@ -86,7 +86,7 @@ private extension BloodPressureViewController {
         ]
         pulseValue.text = String(format: "%d bpm", data.pulse)
         let systolicColors = [UIColor(hex: "456F01"), UIColor(hex: "637402"), UIColor(hex: "DB8804"), UIColor(hex: "D62B04"), UIColor(hex: "BA0806")]
-        systolicPipesView.configView(currentV: Int(data.systolic), minV: 80, maxV: 170, colors: systolicColors)
+        systolicPipesView.configView(currentV: Int(data.systolic), minV: 80, maxV: 250, colors: systolicColors)
         diastolicPipesView.configView(currentV: Int(data.diastolic), minV: 0, maxV: 140, colors: systolicColors)
         pulsePipesView.configView(currentV: Int(data.pulse), minV: 0, maxV: 200, colors: [UIColor(hex: "A80C00"), UIColor(hex: "A80C00")])
     }

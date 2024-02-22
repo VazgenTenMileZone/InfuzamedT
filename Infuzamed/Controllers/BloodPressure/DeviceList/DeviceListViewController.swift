@@ -25,8 +25,10 @@ final class DeviceListViewController: UIViewController {
         AHDevicePlugin.default().searchDevice(filter) { [weak self] device in
             if let device {
                 DispatchQueue.main.async {
-                    self?.devices.append(device)
-                    self?.tableView.reloadData()
+                    if device.deviceName != nil {
+                        self?.devices.append(device)
+                        self?.tableView.reloadData()
+                    }
                 }
             }
         }

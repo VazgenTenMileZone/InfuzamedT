@@ -17,7 +17,7 @@ final class LoginManager: NSObject {
     
     func login(login: String?, password: String?, success: @escaping (Bool) -> ()) {
         guard let login, let password, !login.isEmpty, !password.isEmpty else { return }
-        let loginURL = URL(string: "http://ec2-54-215-231-89.us-west-1.compute.amazonaws.com:8085/api/oauth/token")!
+        let loginURL = URL(string: "\(Constants.baseURL)api/oauth/token")!
         
         var loginRequest = URLRequest(url: loginURL)
         loginRequest.httpMethod = "POST" // Adjust the HTTP method as needed

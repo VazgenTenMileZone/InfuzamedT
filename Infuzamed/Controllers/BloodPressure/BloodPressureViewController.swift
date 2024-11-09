@@ -149,7 +149,7 @@ extension BloodPressureViewController: AHDeviceDataDelegate {
                                      "measurementTime": Date().dateToISO8601String(),
                                      "userId": uid]
 
-        NetworkManager.post(urlString: "http://ec2-54-215-231-89.us-west-1.compute.amazonaws.com:8085/api/data/create", parameters: params)
+        NetworkManager.post(urlString: "\(Constants.baseURL)api/data/create", parameters: params)
     }
 }
 

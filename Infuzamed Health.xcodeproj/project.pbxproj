@@ -70,6 +70,7 @@
 		31ACCF2E2AD176C000F588E0 /* VTProLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31C1BE082AD14502007E786A /* VTProLib.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		31ACCF322AD1791E00F588E0 /* ECGViewCoontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */; };
 		31ACCF332AD1791E00F588E0 /* ECGViewCoontroller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */; };
+		383ED82A2CDF54E100B422D6 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383ED8292CDF54DF00B422D6 /* Helpers.swift */; };
 		38F91ED62B854C5E00D8383D /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F91ED42B854C5E00D8383D /* DeviceListViewController.swift */; };
 		38F91ED72B854C5E00D8383D /* DeviceListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F91ED52B854C5E00D8383D /* DeviceListViewController.xib */; };
 		38F91EDA2B854FAD00D8383D /* DeviceListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F91ED82B854FAD00D8383D /* DeviceListTableViewCell.swift */; };
@@ -166,6 +167,7 @@
 		31ACCF302AD1791E00F588E0 /* ECGViewCoontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECGViewCoontroller.swift; sourceTree = "<group>"; };
 		31ACCF312AD1791E00F588E0 /* ECGViewCoontroller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECGViewCoontroller.xib; sourceTree = "<group>"; };
 		31C1BE082AD14502007E786A /* VTProLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VTProLib.framework; sourceTree = "<group>"; };
+		383ED8292CDF54DF00B422D6 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 		38F91ED42B854C5E00D8383D /* DeviceListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListViewController.swift; sourceTree = "<group>"; };
 		38F91ED52B854C5E00D8383D /* DeviceListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceListViewController.xib; sourceTree = "<group>"; };
 		38F91ED82B854FAD00D8383D /* DeviceListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceListTableViewCell.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				3116A4092A60669400717911 /* AppDelegate.swift */,
 				3116A40B2A60669400717911 /* SceneDelegate.swift */,
 				3126234F2A6698ED00A7BB98 /* BaseViewController.swift */,
+				383ED8292CDF54DF00B422D6 /* Helpers.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -602,6 +605,7 @@
 				3136A1E72A881C6200ABE100 /* BarPlot.swift in Sources */,
 				3136A1ED2A881C7D00ABE100 /* ScrollableGraphViewDrawingDelegate.swift in Sources */,
 				313746AF2A8800460054274B /* ECGChartView.swift in Sources */,
+				383ED82A2CDF54E100B422D6 /* Helpers.swift in Sources */,
 				3136A1CD2A881B8700ABE100 /* ScrollableGraphView.swift in Sources */,
 				3144D55E2A87D64000A8F84E /* VTDevice.m in Sources */,
 				3116A4282A606B0B00717911 /* GradientView.swift in Sources */,
@@ -781,7 +785,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M78LTVTBTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -805,7 +809,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
@@ -829,7 +833,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M78LTVTBTN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -853,7 +857,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",

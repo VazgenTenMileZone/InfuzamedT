@@ -48,8 +48,8 @@ private extension ECGViewCoontroller {
                                      "ekgData": egcProggresData,
                                      "heartRate": String(format: "%d", self.heartRate),
                                      "userId": uid,
-                                     "createdAt": selectedEcgDate]
-        NetworkManager.post(urlString: "\(Constants.baseURL)api/data/create", parameters: params)
+                                     "measurementTime": selectedEcgDate.toISO8601() ?? ""]
+        NetworkManager.post(urlString: "\(Constants.baseURL)api/ekg-data/create", parameters: params)
     }
 }
 

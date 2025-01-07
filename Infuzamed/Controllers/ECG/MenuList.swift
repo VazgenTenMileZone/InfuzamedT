@@ -19,7 +19,7 @@ import Foundation
 import UIKit
 import VTProLib
 
-class MenuList: UIViewController, VTProCommunicateDelegate {
+final giclass MenuList: UIViewController, VTProCommunicateDelegate {
     @IBOutlet var miniDescLab: UILabel!
     @IBOutlet var tableView: UITableView!
     var funcArray = [NameEventModel]()
